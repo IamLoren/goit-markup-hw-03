@@ -1,0 +1,200 @@
+:root {
+    --clr-white: #ffffff;
+    --clr-gray:#f4f4fd;
+    --clr-dark-blue: #2e2f42;
+    --clr-blue-primary: #4d5ae5;
+    --clr-blue-pressed:#404bbf;
+    --clr-titles: #2e2f42;
+    --clr-text: #434455;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--clr-text);
+    background-color: var(--clr-white);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none; 
+}
+
+/* HEADER */
+
+.nav-logo {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 0.54px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: var(--clr-blue-primary);
+}
+
+.nav-logo > span {
+    color: var(--clr-dark-blue);
+}
+
+.nav-link {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--clr-dark-blue);
+}
+
+.address {
+    font-style: normal
+}
+
+.address-link {
+    color: inherit;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.address-link:hover,
+.address-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--clr-blue-pressed);
+}
+
+/* HERO-SECTION */
+
+.hero {
+    background-color: var(--clr-dark-blue);
+}
+
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--clr-white);
+}
+
+.hero-button {
+    background-color: var(--clr-blue-primary);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--clr-blue-pressed);
+}
+
+/* FEATURES */
+
+.features-subtitle,
+.team-name,
+.portfolio-cardname {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--clr-titles);
+}
+
+.features-description {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* PRODUCTS */
+.products-title,
+.team-title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--clr-titles);
+}
+
+.products-item {
+    overflow: hidden;
+}
+
+.team-profession {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* TEAM */
+
+.team {
+    background-color: var(--clr-gray);
+}
+
+.team-card {
+    background-color: var(--clr-white);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--clr-dark-blue);
+}
+
+.footerlogo {
+    color: var(--clr-blue-primary);
+}
+
+.footer-description {
+    color: var(--clr-gray);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.footerlogo > .span {
+    color: #f4f4fd;
+}
+
+/* PORTFOLIO */
+
+.button {
+    background-color: var(--clr-gray);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--clr-blue-primary);
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #404BBF;
+    color: #FFFFFF;
+}
+
+.portfolio-cardtype {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--clr-text);
+}
+
+
+
