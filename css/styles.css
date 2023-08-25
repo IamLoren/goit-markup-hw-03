@@ -64,10 +64,14 @@ img {
 }
 
 .section {
-    padding-top: 120px;
+    padding: 120px 0;
 }
 
 /* HEADER */
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
 
 .nav-container {
     display: flex;
@@ -78,7 +82,10 @@ img {
 .nav {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     width: 452px;
+    align-items: center;
+    padding: 24px 0;
 }
 
 .nav-list {
@@ -134,7 +141,8 @@ img {
 
 /* HERO-SECTION */
 
-.hero {
+.hero-section {
+    padding: 188px 0;
     background-color: var(--clr-dark-blue);
 }
 
@@ -143,8 +151,9 @@ img {
 }
 
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     margin: 0 auto;
+    margin-bottom: 8px;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -155,6 +164,10 @@ img {
 
 .hero-button {
     display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none; 
+    border-radius: 4px; 
     margin: 0 auto;
     background-color: var(--clr-blue-primary);
     font-family: "Roboto", sans-serif;
@@ -202,10 +215,12 @@ img {
 .products-list {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .products-title,
 .team-title {
+    margin-bottom: 72px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
