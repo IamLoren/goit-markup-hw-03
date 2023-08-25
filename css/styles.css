@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --clr-white: #ffffff;
     --clr-gray:#f4f4fd;
@@ -20,7 +26,12 @@ li {
 }
 
 a {
+    display: block;
     text-decoration: none;
+}
+
+img {
+    display: block;
 }
 
 .list {
@@ -31,9 +42,58 @@ a {
     text-decoration: none; 
 }
 
+.container { 
+    max-width: 1158px;
+    padding-left:  15px;
+    padding-right:  15px;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    padding-top: 120px;
+}
+
 /* HEADER */
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 452px;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+}
+
 .nav-logo {
+    margin-right: 76px;
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -78,7 +138,13 @@ a {
     background-color: var(--clr-dark-blue);
 }
 
+.hero-container {
+    padding-top: 188px;
+}
+
 .hero-title {
+    width: 496px;
+    margin: 0 auto;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
@@ -88,6 +154,8 @@ a {
 }
 
 .hero-button {
+    display: block;
+    margin: 0 auto;
     background-color: var(--clr-blue-primary);
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -105,6 +173,15 @@ a {
 
 /* FEATURES */
 
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    width: calc((100% - 72px) / 4);
+}
+
 .features-subtitle,
 .team-name,
 .portfolio-cardname {
@@ -121,6 +198,12 @@ a {
 }
 
 /* PRODUCTS */
+
+.products-list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .products-title,
 .team-title {
     font-size: 36px;
@@ -145,6 +228,11 @@ a {
 
 .team {
     background-color: var(--clr-gray);
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .team-card {
@@ -173,7 +261,19 @@ footer {
 
 /* PORTFOLIO */
 
-.button {
+
+.portfolio-buttons {
+   
+    width: 586px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.button { 
+    box-sizing: content-box;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border-color: #E7E9FC;
     background-color: var(--clr-gray);
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -188,6 +288,17 @@ footer {
 .button:focus {
     background-color: #404BBF;
     color: #FFFFFF;
+}
+
+.portfolio-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.portfolio-card {
+    width: 360px;
 }
 
 .portfolio-cardtype {
