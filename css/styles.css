@@ -289,6 +289,7 @@ footer {
 }
 
 .footer-description {
+    width: 264px;
     color: var(--clr-gray);
     line-height: 1.5;
     letter-spacing: 0.02em;
