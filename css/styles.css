@@ -278,11 +278,14 @@ img {
 /* FOOTER */
 
 footer {
+    padding: 100px 0; 
     background-color: var(--clr-dark-blue);
 }
 
 .footerlogo {
     color: var(--clr-blue-primary);
+    display: inline-block; 
+    margin-bottom: 16px; 
 }
 
 .footer-description {
@@ -337,10 +340,12 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-card {
     width: 360px;
+    border-top: none;
 }
 
 .card-description {
